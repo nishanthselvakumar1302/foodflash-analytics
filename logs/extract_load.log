@@ -1,0 +1,96 @@
+22:19:07  INFO      Run ID  : run_20260503_164907
+22:19:07  INFO      Mode    : replace
+22:19:07  INFO      Dry run : False
+22:19:09  INFO      
+  Extraction complete — 193,035 total rows across 5 tables
+22:20:31  INFO      Run ID  : run_20260503_165031
+22:20:31  INFO      Mode    : replace
+22:20:31  INFO      Dry run : False
+22:20:33  INFO      
+  Extraction complete — 193,035 total rows across 5 tables
+22:20:36  ERROR     Snowflake connection failed:
+  250001 (08001): Failed to connect to DB: VSAYEWI-ST33383.snowflakecomputing.com:443. Incorrect username or password was specified.
+22:20:36  ERROR     Common fixes:
+  1. Check SF_ACCOUNT format: abc12345.ap-south-1.aws (no https://)
+  2. Check SF_USER and SF_PASSWORD are correct
+  3. Make sure FOODFLASH_WH warehouse is not suspended manually
+  4. Check your IP is not blocked by Snowflake network policy
+22:22:50  INFO      Run ID  : run_20260503_165250
+22:22:50  INFO      Mode    : replace
+22:22:50  INFO      Dry run : False
+22:22:52  INFO      
+  Extraction complete — 193,035 total rows across 5 tables
+22:22:56  INFO        Target: FOODFLASH_DB.RAW
+22:22:56  INFO        Truncated CUSTOMERS (replace mode)
+22:23:02  INFO        Truncated RESTAURANTS (replace mode)
+22:23:06  INFO        Truncated RIDERS (replace mode)
+22:23:08  INFO        Truncated ORDERS (replace mode)
+22:23:21  INFO        Truncated ORDER_ITEMS (replace mode)
+22:23:39  WARNING   Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError()': /bzeq1000-s/stages/10fa8df3-d649-4d71-ab0f-943fb50a45c4/file0.txt
+22:23:40  WARNING   PUT with url b'https://sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com/bzeq1000-s/stages/10fa8df3-d649-4d71-ab0f-943fb50a45c4/file0.txt' failed for transient error: HTTPSConnectionPool(host='sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com', port=443): Max retries exceeded with url: /bzeq1000-s/stages/10fa8df3-d649-4d71-ab0f-943fb50a45c4/file0.txt (Caused by NameResolutionError("HTTPSConnection(host='sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com', port=443): Failed to resolve 'sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com' ([Errno 11001] getaddrinfo failed)"))
+22:23:40  WARNING   Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com', port=443): Failed to resolve 'sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com' ([Errno 11001] getaddrinfo failed)")': /bzeq1000-s/stages/10fa8df3-d649-4d71-ab0f-943fb50a45c4/file0.txt
+22:23:42  WARNING   PUT with url b'https://sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com/bzeq1000-s/stages/10fa8df3-d649-4d71-ab0f-943fb50a45c4/file0.txt' failed for transient error: HTTPSConnectionPool(host='sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com', port=443): Max retries exceeded with url: /bzeq1000-s/stages/10fa8df3-d649-4d71-ab0f-943fb50a45c4/file0.txt (Caused by NameResolutionError("HTTPSConnection(host='sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com', port=443): Failed to resolve 'sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com' ([Errno 11001] getaddrinfo failed)"))
+22:23:42  WARNING   Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com', port=443): Failed to resolve 'sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com' ([Errno 11001] getaddrinfo failed)")': /bzeq1000-s/stages/10fa8df3-d649-4d71-ab0f-943fb50a45c4/file0.txt
+22:23:46  WARNING   PUT with url b'https://sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com/bzeq1000-s/stages/10fa8df3-d649-4d71-ab0f-943fb50a45c4/file0.txt' failed for transient error: HTTPSConnectionPool(host='sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com', port=443): Max retries exceeded with url: /bzeq1000-s/stages/10fa8df3-d649-4d71-ab0f-943fb50a45c4/file0.txt (Caused by NameResolutionError("HTTPSConnection(host='sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com', port=443): Failed to resolve 'sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com' ([Errno 11001] getaddrinfo failed)"))
+22:23:46  WARNING   Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com', port=443): Failed to resolve 'sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com' ([Errno 11001] getaddrinfo failed)")': /bzeq1000-s/stages/10fa8df3-d649-4d71-ab0f-943fb50a45c4/file0.txt
+22:23:54  WARNING   PUT with url b'https://sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com/bzeq1000-s/stages/10fa8df3-d649-4d71-ab0f-943fb50a45c4/file0.txt' failed for transient error: HTTPSConnectionPool(host='sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com', port=443): Max retries exceeded with url: /bzeq1000-s/stages/10fa8df3-d649-4d71-ab0f-943fb50a45c4/file0.txt (Caused by NameResolutionError("HTTPSConnection(host='sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com', port=443): Failed to resolve 'sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com' ([Errno 11001] getaddrinfo failed)"))
+22:23:54  WARNING   Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com', port=443): Failed to resolve 'sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com' ([Errno 11001] getaddrinfo failed)")': /bzeq1000-s/stages/10fa8df3-d649-4d71-ab0f-943fb50a45c4/file0.txt
+22:24:10  WARNING   PUT with url b'https://sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com/bzeq1000-s/stages/10fa8df3-d649-4d71-ab0f-943fb50a45c4/file0.txt' failed for transient error: HTTPSConnectionPool(host='sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com', port=443): Max retries exceeded with url: /bzeq1000-s/stages/10fa8df3-d649-4d71-ab0f-943fb50a45c4/file0.txt (Caused by NameResolutionError("HTTPSConnection(host='sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com', port=443): Failed to resolve 'sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com' ([Errno 11001] getaddrinfo failed)"))
+22:24:10  ERROR     An exception was raised in <bound method SnowflakeStorageClient.upload_chunk of <snowflake.connector.s3_storage_client.SnowflakeS3RestClient object at 0x0000013A81DDEEA0>>
+Traceback (most recent call last):
+  File "d:\Anaconda\Lib\site-packages\snowflake\connector\file_transfer_agent.py", line 628, in function_and_callback_wrapper
+    work(*args, **kwargs),
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "d:\Anaconda\Lib\site-packages\snowflake\connector\storage_client.py", line 440, in upload_chunk
+    self._upload_chunk(chunk_id, _data)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "d:\Anaconda\Lib\site-packages\snowflake\connector\s3_storage_client.py", line 487, in _upload_chunk
+    response = self._send_request_with_authentication_and_retry(
+        url=url,
+    ...<5 lines>...
+        unsigned_payload=True,
+    )
+  File "d:\Anaconda\Lib\site-packages\snowflake\connector\s3_storage_client.py", line 391, in _send_request_with_authentication_and_retry
+    return self._send_request_with_retry(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        verb, generate_authenticated_url_and_args_v4, retry_id
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "d:\Anaconda\Lib\site-packages\snowflake\connector\storage_client.py", line 341, in _send_request_with_retry
+    raise RequestExceedMaxRetryError(
+        f"{verb} with url {url} failed for exceeding maximum retries."
+    )
+snowflake.connector.errors.RequestExceedMaxRetryError: PUT with url b'https://sfc-th-ds1-03-customer-stage.s3.ap-southeast-7.amazonaws.com/bzeq1000-s/stages/10fa8df3-d649-4d71-ab0f-943fb50a45c4/file0.txt' failed for exceeding maximum retries.
+22:24:30  WARNING   Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='vsayewi-st33383.snowflakecomputing.com', port=443): Failed to resolve 'vsayewi-st33383.snowflakecomputing.com' ([Errno 11001] getaddrinfo failed)")': /queries/v1/query-request?requestId=3efc5465-c414-407a-bb5b-b1c1cc190249&clientStartTime=1777827250492&retryCount=1&retryReason=0&request_guid=1cb38ced-3a38-4cb3-8f69-7fb831c586b4
+22:24:32  WARNING   Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='vsayewi-st33383.snowflakecomputing.com', port=443): Failed to resolve 'vsayewi-st33383.snowflakecomputing.com' ([Errno 11001] getaddrinfo failed)")': /queries/v1/query-request?requestId=3efc5465-c414-407a-bb5b-b1c1cc190249&clientStartTime=1777827250492&retryCount=2&retryReason=0&request_guid=105fa8dc-e571-4163-bb3b-66fafe45856b
+22:24:33  WARNING   Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='vsayewi-st33383.snowflakecomputing.com', port=443): Failed to resolve 'vsayewi-st33383.snowflakecomputing.com' ([Errno 11001] getaddrinfo failed)")': /queries/v1/query-request?requestId=3efc5465-c414-407a-bb5b-b1c1cc190249&clientStartTime=1777827250492&retryCount=3&retryReason=0&request_guid=09098c52-9a95-4256-a1a5-6c4199b65938
+22:24:34  WARNING   Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='vsayewi-st33383.snowflakecomputing.com', port=443): Failed to resolve 'vsayewi-st33383.snowflakecomputing.com' ([Errno 11001] getaddrinfo failed)")': /queries/v1/query-request?requestId=3efc5465-c414-407a-bb5b-b1c1cc190249&clientStartTime=1777827250492&retryCount=4&retryReason=0&request_guid=9ee4653e-77c3-4717-aa1f-a0d0407f503f
+22:24:42  WARNING   Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='vsayewi-st33383.snowflakecomputing.com', port=443): Failed to resolve 'vsayewi-st33383.snowflakecomputing.com' ([Errno 11001] getaddrinfo failed)")': /queries/v1/query-request?requestId=3efc5465-c414-407a-bb5b-b1c1cc190249&clientStartTime=1777827250492&retryCount=5&retryReason=0&request_guid=8cbbceac-15ec-4c1b-9c18-834aaf0cd0de
+22:24:43  WARNING   Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='vsayewi-st33383.snowflakecomputing.com', port=443): Failed to resolve 'vsayewi-st33383.snowflakecomputing.com' ([Errno 11001] getaddrinfo failed)")': /queries/v1/query-request?requestId=3efc5465-c414-407a-bb5b-b1c1cc190249&clientStartTime=1777827250492&retryCount=6&retryReason=0&request_guid=e4e48e8e-d016-44c6-b9d9-1d357a6d36df
+22:25:48  WARNING     ORDER_ITEMS: 1 chunk error(s) — check logs
+22:25:51  INFO        Pipeline run logged to AUDIT.PIPELINE_RUNS
+22:42:20  INFO      Run ID  : run_20260503_171220
+22:42:20  INFO      Mode    : replace
+22:42:20  INFO      Dry run : False
+22:42:23  INFO      
+  Extraction complete — 193,035 total rows across 5 tables
+22:42:27  INFO        Target: FOODFLASH_DB.RAW
+22:42:27  INFO        Truncated CUSTOMERS (replace mode)
+22:42:34  INFO        Truncated RESTAURANTS (replace mode)
+22:42:36  INFO        Truncated RIDERS (replace mode)
+22:42:38  INFO        Truncated ORDERS (replace mode)
+22:43:14  INFO        Truncated ORDER_ITEMS (replace mode)
+22:44:29  INFO        Pipeline run logged to AUDIT.PIPELINE_RUNS
+23:50:23  INFO      Run ID  : run_20260503_182023
+23:50:23  INFO      Mode    : replace
+23:50:23  INFO      Dry run : False
+23:50:26  INFO      
+  Extraction complete — 193,035 total rows across 5 tables
+23:50:30  INFO        Target: FOODFLASH_DB.RAW
+23:50:30  INFO        Truncated CUSTOMERS (replace mode)
+23:50:36  INFO        Truncated RESTAURANTS (replace mode)
+23:50:38  INFO        Truncated RIDERS (replace mode)
+23:50:40  INFO        Truncated ORDERS (replace mode)
+23:51:18  INFO        Truncated ORDER_ITEMS (replace mode)
+23:52:31  INFO        Pipeline run logged to AUDIT.PIPELINE_RUNS

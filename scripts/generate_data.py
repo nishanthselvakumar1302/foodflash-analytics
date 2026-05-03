@@ -1,22 +1,3 @@
-"""
-FoodFlash Analytics — Data Generation Script
-=============================================
-Generates realistic food delivery data for 5 tables and loads them
-into PostgreSQL to simulate a real food delivery app's source database.
-
-Tables created:
-  - customers    : 5,000 rows
-  - restaurants  : 500 rows
-  - riders       : 300 rows
-  - orders       : 50,000 rows
-  - order_items  : ~150,000 rows (3 items per order on average)
-
-Usage:
-  python scripts/generate_data.py
-
-Requirements:
-  pip install faker sqlalchemy psycopg2-binary pandas python-dotenv
-"""
 
 # ─────────────────────────────────────────────
 # IMPORTS
